@@ -50,25 +50,33 @@ The project is organized as a monorepo with the following structure:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yogcodes/yogesh_document_summarize.git
+   git clone https://github.com/yogcodes/documentllm.git
    cd your-repo-name
+   
 2. Backend Setup:
-Navigate to the backend directory:
+* Navigate to the backend directory:
 cd LLM_Assignment/
-. Create a virtual environment and activate it:
+
+* Create a virtual environment and activate it:
 python -m venv env
+
 source env/bin/activate  # On Windows use `env\Scripts\activate`
-. Install the dependencies:
+
+* Install the dependencies:
 pip install -r requirements.txt
-.Start the backend server:
+
+* Start the backend server:
 uvicorn main:app --reload
 
 3.Frontend Setup:
-. Navigate to the frontend directory:
+
+* Navigate to the frontend directory:
 cd LLM_Assignment_frontend/
-.Install the dependencies:
+
+*Install the dependencies:
 npm install
-.Start the frontend development server:
+
+*Start the frontend development server:
 npm start
 
 
@@ -77,7 +85,9 @@ With both servers running, visit http://localhost:3000 in your browser to use th
 
 Features
 File Upload: Upload PDF documents for summarization.
+
 Summarization: Generate a summary of the uploaded PDF document using a locally hosted LLM.
+
 User Interface: Responsive and user-friendly interface built with React
 
 Approach
